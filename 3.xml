@@ -108,13 +108,18 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="variables_set" id="20" inline="true">
-                                                    <field name="VAR">turn</field>
-                                                    <value name="VALUE">
-                                                      <block type="math_number" id="21">
-                                                        <field name="NUM">1</field>
+                                                  <block type="procedures_callnoreturn" id="92">
+                                                    <mutation name="speed"></mutation>
+                                                    <next>
+                                                      <block type="variables_set" id="20" inline="true">
+                                                        <field name="VAR">turn</field>
+                                                        <value name="VALUE">
+                                                          <block type="math_number" id="21">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
                                                       </block>
-                                                    </value>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
@@ -197,13 +202,18 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="variables_set" id="27" inline="true">
-                                                    <field name="VAR">turn</field>
-                                                    <value name="VALUE">
-                                                      <block type="math_number" id="28">
-                                                        <field name="NUM">2</field>
+                                                  <block type="procedures_callnoreturn" id="93">
+                                                    <mutation name="speed"></mutation>
+                                                    <next>
+                                                      <block type="variables_set" id="27" inline="true">
+                                                        <field name="VAR">turn</field>
+                                                        <value name="VALUE">
+                                                          <block type="math_number" id="28">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
                                                       </block>
-                                                    </value>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
