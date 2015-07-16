@@ -39,7 +39,7 @@
                   <block type="procedures_callnoreturn" id="10">
                     <mutation name="speed"></mutation>
                     <next>
-                      <block type="controls_whileUntil" id="40" inline="false">
+                      <block type="controls_whileUntil" id="11" inline="false">
                         <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
                           <block type="logic_compare" id="12" inline="true">
@@ -73,6 +73,33 @@
                                         <field name="NUM">1</field>
                                       </block>
                                     </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="41">
+                                        <mutation name="speed"></mutation>
+                                        <next>
+                                          <block type="robot_delay" id="43" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="50">
+                                                <field name="NUM">1000</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_left" id="60">
+                                                <next>
+                                                  <block type="robot_delay" id="61" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="62">
+                                                        <field name="NUM">1500</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
