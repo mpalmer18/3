@@ -82,41 +82,36 @@
                               </block>
                             </value>
                             <next>
-                              <block type="procedures_callnoreturn" id="14">
-                                <mutation name="speed"></mutation>
+                              <block type="robot_delay" id="15" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="16">
+                                    <field name="NUM">5000</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="robot_delay" id="15" inline="true">
+                                  <block type="robot_delay" id="83" inline="true">
                                     <value name="DELAY">
-                                      <block type="math_number" id="16">
-                                        <field name="NUM">5000</field>
+                                      <block type="math_number" id="90">
+                                        <field name="NUM">1000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="robot_delay" id="83" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="90">
-                                            <field name="NUM">1000</field>
-                                          </block>
-                                        </value>
+                                      <block type="movement_left" id="17">
                                         <next>
-                                          <block type="movement_left" id="17">
+                                          <block type="robot_delay" id="18" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="19">
+                                                <field name="NUM">1500</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="robot_delay" id="18" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="19">
-                                                    <field name="NUM">1500</field>
+                                              <block type="variables_set" id="20" inline="true">
+                                                <field name="VAR">turn</field>
+                                                <value name="VALUE">
+                                                  <block type="math_number" id="21">
+                                                    <field name="NUM">1</field>
                                                   </block>
                                                 </value>
-                                                <next>
-                                                  <block type="variables_set" id="20" inline="true">
-                                                    <field name="VAR">turn</field>
-                                                    <value name="VALUE">
-                                                      <block type="math_number" id="21">
-                                                        <field name="NUM">1</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </next>
                                               </block>
                                             </next>
                                           </block>
