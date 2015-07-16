@@ -75,7 +75,11 @@
       </block>
     </statement>
   </block>
-  <block type="procedures_callnoreturn" id="103" x="117" y="416">
-    <mutation name="speed"></mutation>
+  <block type="movement_forward" id="113" x="123" y="387">
+    <next>
+      <block type="procedures_callnoreturn" id="103">
+        <mutation name="speed"></mutation>
+      </block>
+    </next>
   </block>
 </xml>
