@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" disabled="true" x="10" y="28">
+  <block type="variables_set" id="1" inline="true" x="10" y="28">
     <field name="VAR">turn</field>
     <value name="VALUE">
       <block type="math_number" id="2">
@@ -7,78 +7,94 @@
       </block>
     </value>
     <next>
-      <block type="variables_set" id="3" inline="true" disabled="true">
+      <block type="variables_set" id="3" inline="true">
         <field name="VAR">finish</field>
         <value name="VALUE">
           <block type="math_number" id="4">
             <field name="NUM">3</field>
           </block>
         </value>
+        <next>
+          <block type="controls_whileUntil" id="5" inline="false">
+            <field name="MODE">WHILE</field>
+            <value name="NUMBER">
+              <block type="logic_compare" id="6" inline="true">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="7">
+                    <field name="VAR">finish</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="8">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="controls_if" id="9" inline="false">
+                <value name="IF0">
+                  <block type="logic_compare" id="10" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="math_number" id="11">
+                        <field name="NUM">25</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="sensor_object" id="12">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_right" id="13">
+                    <next>
+                      <block type="robot_delay" id="14" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="15">
+                            <field name="NUM">1500</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="16" inline="true">
+                            <field name="VAR">turn</field>
+                            <value name="VALUE">
+                              <block type="math_number" id="17">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
       </block>
     </next>
   </block>
-  <block type="procedures_defnoreturn" id="23" x="209" y="36">
+  <block type="procedures_defnoreturn" id="18" x="175" y="25">
     <mutation></mutation>
     <field name="NAME">speed</field>
     <statement name="STACK">
-      <block type="movement_setmotors" id="35" inline="true">
+      <block type="movement_setmotors" id="19" inline="true">
         <value name="BOTHMOVLEFT">
-          <block type="math_number" id="42">
+          <block type="math_number" id="20">
             <field name="NUM">75</field>
           </block>
         </value>
         <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="44">
+          <block type="math_number" id="21">
             <field name="NUM">100</field>
           </block>
         </value>
       </block>
     </statement>
-  </block>
-  <block type="controls_whileUntil" id="5" inline="false" disabled="true" x="43" y="131">
-    <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="logic_compare" id="19" inline="true">
-        <field name="OP">EQ</field>
-        <value name="A">
-          <block type="variables_get" id="12">
-            <field name="VAR">finish</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="6">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="controls_if" id="58" inline="false">
-        <value name="IF0">
-          <block type="sensor_object" id="51">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_right" id="76">
-            <next>
-              <block type="robot_delay" id="66" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="83">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </statement>
-      </block>
-    </statement>
-  </block>
-  <block type="procedures_callnoreturn" id="103" x="147" y="381">
-    <mutation name="speed"></mutation>
-    <next>
-      <block type="movement_forward" id="113"></block>
-    </next>
   </block>
 </xml>
