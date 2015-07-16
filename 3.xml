@@ -248,10 +248,36 @@
                             <next>
                               <block type="controls_if" id="122" inline="false">
                                 <value name="IF0">
-                                  <block type="logic_negate" id="188" inline="true">
-                                    <value name="NUMBER">
-                                      <block type="sensor_object" id="171">
-                                        <field name="OBJECT">REAR</field>
+                                  <block type="logic_operation" id="315" inline="true">
+                                    <field name="OP">LAND</field>
+                                    <value name="A">
+                                      <block type="logic_compare" id="328" inline="true">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="sensor_spectrometer" id="329">
+                                            <field name="LIGHT">BLUE</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="377">
+                                            <field name="NUM">175</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_compare" id="288" inline="true">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="sensor_spectrometer" id="266">
+                                            <field name="LIGHT">BLUE</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_number" id="378">
+                                            <field name="NUM">188</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                   </block>
