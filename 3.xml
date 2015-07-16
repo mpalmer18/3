@@ -15,65 +15,70 @@
           </block>
         </value>
         <next>
-          <block type="controls_whileUntil" id="5" inline="false">
-            <field name="MODE">WHILE</field>
-            <value name="NUMBER">
-              <block type="logic_compare" id="6" inline="true">
-                <field name="OP">EQ</field>
-                <value name="A">
-                  <block type="variables_get" id="7">
-                    <field name="VAR">finish</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="8">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <statement name="DO">
-              <block type="controls_if" id="9" inline="false">
-                <value name="IF0">
-                  <block type="logic_compare" id="10" inline="true">
-                    <field name="OP">LT</field>
+          <block type="procedures_callnoreturn" id="31">
+            <mutation name="speed"></mutation>
+            <next>
+              <block type="controls_whileUntil" id="5" inline="false">
+                <field name="MODE">WHILE</field>
+                <value name="NUMBER">
+                  <block type="logic_compare" id="6" inline="true">
+                    <field name="OP">EQ</field>
                     <value name="A">
-                      <block type="math_number" id="11">
-                        <field name="NUM">25</field>
+                      <block type="variables_get" id="7">
+                        <field name="VAR">finish</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="sensor_object" id="12">
-                        <field name="OBJECT">LEFTFRONT</field>
+                      <block type="math_number" id="8">
+                        <field name="NUM">1</field>
                       </block>
                     </value>
                   </block>
                 </value>
-                <statement name="DO0">
-                  <block type="movement_right" id="13">
-                    <next>
-                      <block type="robot_delay" id="14" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="15">
-                            <field name="NUM">1500</field>
+                <statement name="DO">
+                  <block type="controls_if" id="9" inline="false">
+                    <value name="IF0">
+                      <block type="logic_compare" id="10" inline="true">
+                        <field name="OP">LT</field>
+                        <value name="A">
+                          <block type="math_number" id="11">
+                            <field name="NUM">25</field>
                           </block>
                         </value>
+                        <value name="B">
+                          <block type="sensor_object" id="12">
+                            <field name="OBJECT">LEFTFRONT</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="movement_right" id="13">
                         <next>
-                          <block type="variables_set" id="16" inline="true">
-                            <field name="VAR">turn</field>
-                            <value name="VALUE">
-                              <block type="math_number" id="17">
-                                <field name="NUM">1</field>
+                          <block type="robot_delay" id="14" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="15">
+                                <field name="NUM">1500</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="variables_set" id="16" inline="true">
+                                <field name="VAR">turn</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="17">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
-                    </next>
+                    </statement>
                   </block>
                 </statement>
               </block>
-            </statement>
+            </next>
           </block>
         </next>
       </block>
