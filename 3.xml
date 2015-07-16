@@ -88,38 +88,29 @@
                                   <block type="robot_delay" id="15" inline="true">
                                     <value name="DELAY">
                                       <block type="math_number" id="16">
-                                        <field name="NUM">4000</field>
+                                        <field name="NUM">3000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="robot_delay" id="83" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="90">
-                                            <field name="NUM">1000</field>
-                                          </block>
-                                        </value>
+                                      <block type="movement_left" id="17">
                                         <next>
-                                          <block type="movement_left" id="17">
+                                          <block type="robot_delay" id="18" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="19">
+                                                <field name="NUM">1500</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="robot_delay" id="18" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="19">
-                                                    <field name="NUM">1500</field>
-                                                  </block>
-                                                </value>
+                                              <block type="procedures_callnoreturn" id="92">
+                                                <mutation name="speed"></mutation>
                                                 <next>
-                                                  <block type="procedures_callnoreturn" id="92">
-                                                    <mutation name="speed"></mutation>
-                                                    <next>
-                                                      <block type="variables_set" id="20" inline="true">
-                                                        <field name="VAR">turn</field>
-                                                        <value name="VALUE">
-                                                          <block type="math_number" id="21">
-                                                            <field name="NUM">1</field>
-                                                          </block>
-                                                        </value>
+                                                  <block type="variables_set" id="20" inline="true">
+                                                    <field name="VAR">turn</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_number" id="21">
+                                                        <field name="NUM">1</field>
                                                       </block>
-                                                    </next>
+                                                    </value>
                                                   </block>
                                                 </next>
                                               </block>
@@ -189,7 +180,7 @@
                                       <block type="robot_delay" id="30" inline="true">
                                         <value name="DELAY">
                                           <block type="math_number" id="31">
-                                            <field name="NUM">4000</field>
+                                            <field name="NUM">3000</field>
                                           </block>
                                         </value>
                                         <next>
