@@ -1,5 +1,23 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="47" y="54">
+  <block type="procedures_defnoreturn" id="35" x="257" y="59">
+    <mutation></mutation>
+    <field name="NAME">speed</field>
+    <statement name="STACK">
+      <block type="movement_setmotors" id="36" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="37">
+            <field name="NUM">75</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="38">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="variables_set" id="1" inline="true" x="361" y="157">
     <field name="VAR">turn</field>
     <value name="VALUE">
       <block type="math_number" id="2">
@@ -228,26 +246,5 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="procedures_defnoreturn" id="35" x="257" y="59">
-    <mutation></mutation>
-    <field name="NAME">speed</field>
-    <statement name="STACK">
-      <block type="movement_setmotors" id="36" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="37">
-            <field name="NUM">75</field>
-          </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="38">
-            <field name="NUM">100</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-  </block>
-  <block type="variables_get" id="8" x="143" y="98">
-    <field name="VAR">turn</field>
   </block>
 </xml>
