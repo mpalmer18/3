@@ -36,127 +36,38 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="controls_if" id="10" inline="false">
-                    <value name="IF0">
-                      <block type="logic_operation" id="64" inline="true">
-                        <field name="OP">LAND</field>
-                        <value name="A">
-                          <block type="logic_compare" id="57" inline="true">
-                            <field name="OP">EQ</field>
-                            <value name="A">
-                              <block type="variables_get" id="72">
-                                <field name="VAR">turn</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="math_number" id="79">
-                                <field name="NUM">1</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="logic_compare" id="39" inline="true">
-                            <field name="OP">LT</field>
-                            <value name="A">
-                              <block type="math_number" id="40">
-                                <field name="NUM">15</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="sensor_object" id="41">
-                                <field name="OBJECT">LEFTFRONT</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <statement name="DO0">
-                      <block type="movement_right" id="11">
-                        <next>
-                          <block type="robot_delay" id="12" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="13">
-                                <field name="NUM">1500</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="procedures_callnoreturn" id="91">
-                                <mutation name="speed"></mutation>
-                                <next>
-                                  <block type="robot_delay" id="15" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="16">
-                                        <field name="NUM">3000</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="movement_left" id="17">
-                                        <next>
-                                          <block type="robot_delay" id="18" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="19">
-                                                <field name="NUM">1500</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="procedures_callnoreturn" id="92">
-                                                <mutation name="speed"></mutation>
-                                                <next>
-                                                  <block type="variables_set" id="20" inline="true">
-                                                    <field name="VAR">turn</field>
-                                                    <value name="VALUE">
-                                                      <block type="math_number" id="21">
-                                                        <field name="NUM">1</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </statement>
+                  <block type="procedures_callnoreturn" id="95">
+                    <mutation name="speed"></mutation>
                     <next>
-                      <block type="controls_if" id="22" inline="false">
+                      <block type="controls_if" id="10" inline="false">
                         <value name="IF0">
-                          <block type="logic_operation" id="71" inline="true">
+                          <block type="logic_operation" id="64" inline="true">
                             <field name="OP">LAND</field>
                             <value name="A">
-                              <block type="logic_compare" id="23" inline="true">
+                              <block type="logic_compare" id="57" inline="true">
                                 <field name="OP">EQ</field>
                                 <value name="A">
-                                  <block type="variables_get" id="81">
+                                  <block type="variables_get" id="72">
                                     <field name="VAR">turn</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="math_number" id="80">
-                                    <field name="NUM">2</field>
+                                  <block type="math_number" id="79">
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <value name="B">
-                              <block type="logic_compare" id="42" inline="true">
+                              <block type="logic_compare" id="39" inline="true">
                                 <field name="OP">LT</field>
                                 <value name="A">
-                                  <block type="math_number" id="43">
+                                  <block type="math_number" id="40">
                                     <field name="NUM">15</field>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="sensor_object" id="44">
+                                  <block type="sensor_object" id="41">
                                     <field name="OBJECT">LEFTFRONT</field>
                                   </block>
                                 </value>
@@ -165,44 +76,49 @@
                           </block>
                         </value>
                         <statement name="DO0">
-                          <block type="movement_left" id="24">
+                          <block type="procedures_callnoreturn" id="94">
+                            <mutation name="speed"></mutation>
                             <next>
-                              <block type="robot_delay" id="25" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="26">
-                                    <field name="NUM">1500</field>
-                                  </block>
-                                </value>
+                              <block type="movement_right" id="11">
                                 <next>
-                                  <block type="procedures_callnoreturn" id="29">
-                                    <mutation name="speed"></mutation>
+                                  <block type="robot_delay" id="12" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="13">
+                                        <field name="NUM">1500</field>
+                                      </block>
+                                    </value>
                                     <next>
-                                      <block type="robot_delay" id="30" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="31">
-                                            <field name="NUM">3000</field>
-                                          </block>
-                                        </value>
+                                      <block type="procedures_callnoreturn" id="91">
+                                        <mutation name="speed"></mutation>
                                         <next>
-                                          <block type="movement_right" id="32">
+                                          <block type="robot_delay" id="15" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="16">
+                                                <field name="NUM">3000</field>
+                                              </block>
+                                            </value>
                                             <next>
-                                              <block type="robot_delay" id="33" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="34">
-                                                    <field name="NUM">1500</field>
-                                                  </block>
-                                                </value>
+                                              <block type="movement_left" id="17">
                                                 <next>
-                                                  <block type="procedures_callnoreturn" id="93">
-                                                    <mutation name="speed"></mutation>
+                                                  <block type="robot_delay" id="18" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="19">
+                                                        <field name="NUM">1500</field>
+                                                      </block>
+                                                    </value>
                                                     <next>
-                                                      <block type="variables_set" id="27" inline="true">
-                                                        <field name="VAR">turn</field>
-                                                        <value name="VALUE">
-                                                          <block type="math_number" id="28">
-                                                            <field name="NUM">2</field>
+                                                      <block type="procedures_callnoreturn" id="92">
+                                                        <mutation name="speed"></mutation>
+                                                        <next>
+                                                          <block type="variables_set" id="20" inline="true">
+                                                            <field name="VAR">turn</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_number" id="21">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
                                                           </block>
-                                                        </value>
+                                                        </next>
                                                       </block>
                                                     </next>
                                                   </block>
@@ -219,6 +135,100 @@
                             </next>
                           </block>
                         </statement>
+                        <next>
+                          <block type="controls_if" id="22" inline="false">
+                            <value name="IF0">
+                              <block type="logic_operation" id="71" inline="true">
+                                <field name="OP">LAND</field>
+                                <value name="A">
+                                  <block type="logic_compare" id="23" inline="true">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="81">
+                                        <field name="VAR">turn</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="80">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_compare" id="42" inline="true">
+                                    <field name="OP">LT</field>
+                                    <value name="A">
+                                      <block type="math_number" id="43">
+                                        <field name="NUM">15</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="sensor_object" id="44">
+                                        <field name="OBJECT">LEFTFRONT</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="movement_left" id="24">
+                                <next>
+                                  <block type="robot_delay" id="25" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="26">
+                                        <field name="NUM">1500</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="29">
+                                        <mutation name="speed"></mutation>
+                                        <next>
+                                          <block type="robot_delay" id="30" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="31">
+                                                <field name="NUM">3000</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_right" id="32">
+                                                <next>
+                                                  <block type="robot_delay" id="33" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="34">
+                                                        <field name="NUM">1500</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="procedures_callnoreturn" id="93">
+                                                        <mutation name="speed"></mutation>
+                                                        <next>
+                                                          <block type="variables_set" id="27" inline="true">
+                                                            <field name="VAR">turn</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_number" id="28">
+                                                                <field name="NUM">2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
