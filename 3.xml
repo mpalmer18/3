@@ -25,7 +25,7 @@
                     <field name="OP">EQ</field>
                     <value name="A">
                       <block type="variables_get" id="7">
-                        <field name="VAR">finish</field>
+                        <field name="VAR">turn</field>
                       </block>
                     </value>
                     <value name="B">
