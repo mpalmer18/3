@@ -245,48 +245,6 @@
                                 </statement>
                               </block>
                             </statement>
-                            <next>
-                              <block type="controls_if" id="56" inline="false">
-                                <value name="IF0">
-                                  <block type="logic_operation" id="57" inline="true">
-                                    <field name="OP">LAND</field>
-                                    <value name="A">
-                                      <block type="logic_compare" id="58" inline="true">
-                                        <field name="OP">EQ</field>
-                                        <value name="A">
-                                          <block type="sensor_spectrometer" id="59">
-                                            <field name="LIGHT">BLUE</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="60">
-                                            <field name="NUM">175</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="B">
-                                      <block type="logic_compare" id="61" inline="true">
-                                        <field name="OP">EQ</field>
-                                        <value name="A">
-                                          <block type="sensor_spectrometer" id="62">
-                                            <field name="LIGHT">BLUE</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="63">
-                                            <field name="NUM">188</field>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="movement_stop" id="64"></block>
-                                </statement>
-                              </block>
-                            </next>
                           </block>
                         </next>
                       </block>
