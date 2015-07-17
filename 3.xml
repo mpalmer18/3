@@ -77,16 +77,36 @@
                           <block type="controls_whileUntil" id="19" inline="false">
                             <field name="MODE">UNTIL</field>
                             <value name="NUMBER">
-                              <block type="logic_compare" id="20" inline="true">
-                                <field name="OP">LT</field>
+                              <block type="math_bitwise" id="82" inline="true">
+                                <field name="OP">OR</field>
                                 <value name="A">
-                                  <block type="math_number" id="21">
-                                    <field name="NUM">15</field>
+                                  <block type="logic_compare" id="20" inline="true">
+                                    <field name="OP">LT</field>
+                                    <value name="A">
+                                      <block type="math_number" id="21">
+                                        <field name="NUM">15</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="sensor_object" id="22">
+                                        <field name="OBJECT">LEFTFRONT</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                                 <value name="B">
-                                  <block type="sensor_object" id="22">
-                                    <field name="OBJECT">LEFTFRONT</field>
+                                  <block type="logic_compare" id="83" inline="true">
+                                    <field name="OP">LT</field>
+                                    <value name="A">
+                                      <block type="math_number" id="84">
+                                        <field name="NUM">15</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="sensor_object" id="92">
+                                        <field name="OBJECT">RIGHTFRONT</field>
+                                      </block>
+                                    </value>
                                   </block>
                                 </value>
                               </block>
@@ -174,16 +194,36 @@
                               <block type="controls_whileUntil" id="40" inline="false">
                                 <field name="MODE">UNTIL</field>
                                 <value name="NUMBER">
-                                  <block type="logic_compare" id="41" inline="true">
-                                    <field name="OP">LT</field>
+                                  <block type="math_bitwise" id="93" inline="true">
+                                    <field name="OP">OR</field>
                                     <value name="A">
-                                      <block type="math_number" id="42">
-                                        <field name="NUM">15</field>
+                                      <block type="logic_compare" id="94" inline="true">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="math_number" id="95">
+                                            <field name="NUM">15</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="sensor_object" id="96">
+                                            <field name="OBJECT">LEFTFRONT</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                     <value name="B">
-                                      <block type="sensor_object" id="43">
-                                        <field name="OBJECT">LEFTFRONT</field>
+                                      <block type="logic_compare" id="97" inline="true">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="math_number" id="98">
+                                            <field name="NUM">15</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="sensor_object" id="99">
+                                            <field name="OBJECT">RIGHTFRONT</field>
+                                          </block>
+                                        </value>
                                       </block>
                                     </value>
                                   </block>
