@@ -100,7 +100,7 @@
                                       <block type="robot_delay" id="25" inline="true">
                                         <value name="DELAY">
                                           <block type="math_number" id="26">
-                                            <field name="NUM">1600</field>
+                                            <field name="NUM">1500</field>
                                           </block>
                                         </value>
                                         <next>
@@ -119,7 +119,7 @@
                                                       <block type="robot_delay" id="31" inline="true">
                                                         <value name="DELAY">
                                                           <block type="math_number" id="32">
-                                                            <field name="NUM">1600</field>
+                                                            <field name="NUM">1500</field>
                                                           </block>
                                                         </value>
                                                         <next>
@@ -194,7 +194,7 @@
                                       <block type="robot_delay" id="45" inline="true">
                                         <value name="DELAY">
                                           <block type="math_number" id="46">
-                                            <field name="NUM">1600</field>
+                                            <field name="NUM">1500</field>
                                           </block>
                                         </value>
                                         <next>
@@ -213,7 +213,7 @@
                                                       <block type="robot_delay" id="51" inline="true">
                                                         <value name="DELAY">
                                                           <block type="math_number" id="52">
-                                                            <field name="NUM">1600</field>
+                                                            <field name="NUM">1500</field>
                                                           </block>
                                                         </value>
                                                         <next>
