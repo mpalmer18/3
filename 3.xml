@@ -75,7 +75,7 @@
                         </value>
                         <statement name="DO0">
                           <block type="controls_whileUntil" id="19" inline="false">
-                            <field name="MODE">UNTIL</field>
+                            <field name="MODE">WHILE</field>
                             <value name="NUMBER">
                               <block type="logic_operation" id="20" inline="true">
                                 <field name="OP">LOR</field>
@@ -192,7 +192,7 @@
                             </value>
                             <statement name="DO0">
                               <block type="controls_whileUntil" id="44" inline="false">
-                                <field name="MODE">UNTIL</field>
+                                <field name="MODE">WHILE</field>
                                 <value name="NUMBER">
                                   <block type="logic_operation" id="45" inline="true">
                                     <field name="OP">LOR</field>
