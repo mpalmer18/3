@@ -115,7 +115,7 @@
                               <block type="procedures_callnoreturn" id="27">
                                 <mutation name="speed"></mutation>
                                 <next>
-                                  <block type="movement_right" id="28">
+                                  <block type="movement_left" id="73">
                                     <next>
                                       <block type="robot_delay" id="29" inline="true">
                                         <value name="DELAY">
@@ -134,7 +134,7 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_left" id="34">
+                                                  <block type="movement_right" id="83">
                                                     <next>
                                                       <block type="robot_delay" id="35" inline="true">
                                                         <value name="DELAY">
@@ -229,7 +229,7 @@
                                   </block>
                                 </value>
                                 <statement name="DO">
-                                  <block type="movement_left" id="52">
+                                  <block type="movement_right" id="84">
                                     <next>
                                       <block type="robot_delay" id="53" inline="true">
                                         <value name="DELAY">
@@ -248,7 +248,7 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_right" id="58">
+                                                  <block type="movement_left" id="94">
                                                     <next>
                                                       <block type="robot_delay" id="59" inline="true">
                                                         <value name="DELAY">
