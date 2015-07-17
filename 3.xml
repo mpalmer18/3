@@ -84,7 +84,7 @@
                                     <field name="OP">LT</field>
                                     <value name="A">
                                       <block type="math_number" id="21">
-                                        <field name="NUM">15</field>
+                                        <field name="NUM">20</field>
                                       </block>
                                     </value>
                                     <value name="B">
@@ -99,7 +99,7 @@
                                     <field name="OP">LT</field>
                                     <value name="A">
                                       <block type="math_number" id="84">
-                                        <field name="NUM">15</field>
+                                        <field name="NUM">20</field>
                                       </block>
                                     </value>
                                     <value name="B">
@@ -201,7 +201,7 @@
                                         <field name="OP">LT</field>
                                         <value name="A">
                                           <block type="math_number" id="95">
-                                            <field name="NUM">15</field>
+                                            <field name="NUM">20</field>
                                           </block>
                                         </value>
                                         <value name="B">
@@ -216,7 +216,7 @@
                                         <field name="OP">LT</field>
                                         <value name="A">
                                           <block type="math_number" id="98">
-                                            <field name="NUM">15</field>
+                                            <field name="NUM">20</field>
                                           </block>
                                         </value>
                                         <value name="B">
