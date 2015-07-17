@@ -150,7 +150,7 @@
                                                                 <field name="VAR">turn</field>
                                                                 <value name="VALUE">
                                                                   <block type="math_number" id="35">
-                                                                    <field name="NUM">1</field>
+                                                                    <field name="NUM">2</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
@@ -264,7 +264,7 @@
                                                                 <field name="VAR">turn</field>
                                                                 <value name="VALUE">
                                                                   <block type="math_number" id="55">
-                                                                    <field name="NUM">2</field>
+                                                                    <field name="NUM">1</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
